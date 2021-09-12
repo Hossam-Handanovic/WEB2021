@@ -401,6 +401,17 @@ html {
     color: rgb(0, 0, 0);
 }
 
+#github1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-left: 380px;
+    text-decoration: none;
+}
+
+#github1:hover {
+    color: red;
+}
+
 @media only screen and (max-width: 996px) {
     * {
         font-family: 'Roboto', sans-serif;

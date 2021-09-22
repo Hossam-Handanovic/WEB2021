@@ -132,3 +132,22 @@ function easeInOutCubic(t, b, c, d) {
     t -= 2;
     return c / 2 * (t * t * t + 2) + b;
 };
+
+new jBox('Modal', {
+    attach: '#click1',
+    ajax: {
+        url: 'https://reqres.in/api/users?delay=2',
+        data: {
+            id: 1
+        },
+        reload: 'strict',
+        setContent: false,
+        success: function(response) {
+            console.log('jBox AJAX response', response);
+            this.setContent('<b>WEB DEVELOPMENT COURSE</b><br><br><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fchat.whatsapp.com%2FGGWIlSeOb2F7LTgiZGO86N%3Ffbclid%3DIwAR0N7IRYZCvITNc2FSTePe89VHa2WVV8sWsd-ehCNL1hv993gHjIFQboXMQ&h=AT2m3u5E4tuaNdsmC3yb-_PHquMskT_DZqhHFEyLVMGd7ufJgo13Dcai_rzKfeY32W2qdOtF2f39GRvwaU1JCqhin3rbumsQKmMfdWNyDxQm60VtDSQh435EgosOzhqHilSRrA">Group<a/><br><hr>  <a href="#video_lec">videos</a> <br><hr> <a href="./Anoter Page/index.html">Quiz</a> <br> <hr> <a href="#the_task">Tasks </a> <br> <hr> <a href="#the_footer"> about me </a>  ');
+        },
+        error: function() {
+            this.setContent('<b style="color: #d33">Error loading content.</b>');
+        }
+    }
+});

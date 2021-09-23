@@ -249,12 +249,17 @@ html {
     margin-left: 680px;
 }
 
+#video1 {
+    margin-top: 780px;
+}
+
 .video-container {
     margin: 0 auto;
     max-width: 100%;
     width: 1040px;
     height: 590px;
     position: relative;
+    margin-top: 80px;
 }
 
 
@@ -504,21 +509,29 @@ html {
         font-size: 2em;
     }
     .h22 {
-        margin-top: -15px;
+        margin-top: -20px;
         text-align: center;
         font-weight: bold;
         color: black;
-        width: 200px;
-        height: 35px;
+        width: 260px;
+        height: 40px;
         margin-left: 585px;
         cursor: pointer;
         border: 2px solid black;
         background-color: transparent;
         border-radius: 20px;
+        font-size: 2em;
+    }
+    #video1 {
+        margin-top: 60px;
+        margin-left: 380px;
     }
     h2:hover {
         border-color: red;
         color: red;
+    }
+    #task1 {
+        margin-left: 380px;
     }
     .pd1 {
         width: 300px;
@@ -640,6 +653,13 @@ html {
         height: 590px;
         position: relative;
     }
+    .video-container {
+        border: 2px solid;
+        border-radius: 20px;
+        overflow: hidden;
+        height: 560px;
+        margin-top: 20px;
+    }
     /* Video Slider */
     .video-slider {
         display: none;
@@ -758,10 +778,11 @@ html {
         color: rgb(0, 0, 0);
     }
     #github1 {
-        font-size: 2em;
+        font-size: 3em;
         font-weight: bold;
-        margin-left: 380px;
+        margin-left: 200px;
         text-decoration: none;
+        display: flex;
     }
     #github1:hover {
         color: red;
@@ -833,5 +854,8 @@ html {
     .jBox-Modal .jBox-content {
         padding: 15px 20px;
         padding-left: 2px;
+    }
+    #h222 {
+        margin-top: 20px;
     }
 }
